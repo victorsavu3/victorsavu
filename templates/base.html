@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="dark orange">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        {% if page.title %}
+            {{ page.title }} | {{ config.title }}
+        {% elif section.title %}
+            {{ section.title }} | {{ config.title }}
+        {% else %}
+            {{ config.title }}
+        {% endif %}
+    </title>
+
+    <link rel="stylesheet" href="{{ get_url(path="base.css") }}">
+    <link rel="stylesheet" href="{{ get_url(path="solarized.css") }}">
+
+    {% block rss %}
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+    {% endblock %}
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <header class="site-header">
+            {% include "header.html" %}
+        </header>
+        
+        <main class="site-content">
+            <div class="container">
+                {% block content %} {% endblock content %}
+            </div>
+        </main>
+
+        <div class="site-footer">
+            {% include "footer.html" %}
+        </div>
+    </div>
+</body>
+
+</html>

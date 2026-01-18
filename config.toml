@@ -1,0 +1,23 @@
+base_url = "https://www.victorsavu.eu"
+
+title = "Victor's Blog"
+author = "Victor Gabriel Savu"
+
+taxonomies = [
+    { name = "os", feed = true},
+    { name = "tags"},
+]
+
+compile_sass = true
+build_search_index = true
+
+feed_filenames = ["atom.xml", "rss.xml"]
+generate_feeds = true
+
+[markdown]
+github_alerts = true
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
+
+[extra]

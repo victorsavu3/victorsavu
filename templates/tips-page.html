@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  {{ page.title }}
+</h1>
+{{ page.content | safe }}
+
+<p class="note">{{ page.date }}</p>
+{% endblock content %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Welcome to my blog
+</h1>
+
+<h2 class="subtitle">
+  Latest blog posts
+</h1>
+<ul>
+    {% set section = get_section(path="blog/_index.md") %}
+    {% set posts = section.pages | sort(attribute="date") | reverse | slice(end=5) %}
+    {% for page in posts %}
+    <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+    {% endfor %}
+</ul>
+<p><a href="{{ get_url(path='@/blog/_index.md') }}">More</a></p>
+
+<h2 class="subtitle">
+  Latest tips
+</h1>
+<ul>
+    {% set section = get_section(path="tips/_index.md") %}
+    {% set posts = section.pages | sort(attribute="date") | reverse | slice(end=5) %}
+    {% for page in posts %}
+    <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+    {% endfor %}
+    
+</ul>
+<p><a href="{{ get_url(path='@/tips/_index.md') }}">More</a></p>
+
+{% endblock content %}
