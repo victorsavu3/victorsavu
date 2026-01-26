@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="{{ get_url(path="base.css") }}">
     <link rel="stylesheet" href="{{ get_url(path="solarized.css") }}">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
     {% block rss %}
         <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
     {% endblock %}
