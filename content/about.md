@@ -2,4 +2,10 @@
 title = "About me"
 +++
 
-Email: impressum@victorsavu.eu
+
+#### Contact
+
+|        |                                                                |
+|--------|----------------------------------------------------------------|
+| Email  | [ impressum@victorsavu.eu ]( mailto:impressum@victorsavu.eu )  |
+| Matrix | [ @hi:victorsavu.eu ]( https://matrix.to/#/@hi:victorsavu.eu ) |
