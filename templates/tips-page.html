@@ -6,5 +6,5 @@
 </h1>
 {{ page.content | safe }}
 
-<p class="note">{{ page.date }}</p>
+<p class="note">{{ page.date | date(format="%Y-%m-%d") }}</p>
 {% endblock content %}
