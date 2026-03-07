@@ -1,3 +1,5 @@
+set dotenv-load := true
+
 build:
     rm -rf public
     ~/.cargo/bin/zola build
@@ -16,3 +18,10 @@ deploy-victorsavu: build (wait-ssh-ready "victorsavu@victorsavu.eu")
 serve:
     firefox http://127.0.0.1:1111
     ~/.cargo/bin/zola serve
+
+create-release: build
+    tar -cvf public.tar.xz public/
+    curl -v --user victor:${FORGEJO_TOKEN} \
+        --upload-file public.tar.xz \
+        https://forgejo.victorsavu.eu/api/packages/victor/generic/victorsavu/{{ datetime("%Y-%m-%d") }}/www.tar.xz
+    rm public.tar.xz
