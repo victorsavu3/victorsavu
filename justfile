@@ -1,7 +1,7 @@
 build:
     rm -rf public
     ~/.cargo/bin/zola build
-    ~/.cargo/bin/precompress public --extensions html,js,css,xml,txt
+    ~/.cargo/bin/precompress public
 
 install-deps:
     cargo install --locked --git https://github.com/getzola/zola
@@ -12,3 +12,7 @@ wait-ssh-ready host:
 
 deploy-victorsavu: build (wait-ssh-ready "victorsavu@victorsavu.eu")
     rsync -rzP --delete public/ victorsavu@victorsavu.eu:victorsavu/
+
+serve:
+    firefox http://127.0.0.1:1111
+    ~/.cargo/bin/zola serve
