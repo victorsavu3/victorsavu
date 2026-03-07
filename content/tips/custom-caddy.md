@@ -5,7 +5,7 @@ os=["CoreOS"]
 tags=["caddy", "quadlet"]
 +++
 
-Some Caddy modules are [non-standard](https://caddyserver.com/docs/modules/) and are not included in the official docker image. You can add modules easily using [`xcaddy`](https://github.com/caddyserver/xcaddy), but you need to create a custom docker image each time. This can be done in CoreOS using `.build` files.
+Some [Caddy](https://caddyserver.com/) modules are [non-standard](https://caddyserver.com/docs/modules/) and are not included in the official docker image. You can add modules easily using [`xcaddy`](https://github.com/caddyserver/xcaddy), but you need to create a custom docker image each time. This can be done in CoreOS using `.build` files.
 
 Create a `Containerfile` that builds the image. In this example we add `caddy-dns/desec` to the image and we install the file as `/etc/containers/systemd/Containerfile.caddy`.
 
