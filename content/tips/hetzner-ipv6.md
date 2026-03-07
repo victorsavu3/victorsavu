@@ -1,6 +1,6 @@
 +++
 title = "Enable ipv6 on a Hetzner CoreOS server"
-date = 2026-01-17
+date = 2026-01-17T14:00:00Z
 os=["CoreOS"]
 tags=["ipv6", "quadlet"]
 +++

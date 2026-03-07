@@ -1,6 +1,6 @@
 +++
 title = "Serve precompressed static files from caddy"
-date = 2026-03-07T12:00:00.00Z
+date = 2026-03-07T12:00:00Z
 tags=["caddy", "compression", "precompress"]
 +++
 

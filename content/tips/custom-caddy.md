@@ -1,6 +1,6 @@
 +++
 title = "Add modules to caddy on CoreOS"
-date = 2026-01-17
+date = 2026-01-17T12:00:00Z
 os=["CoreOS"]
 tags=["caddy", "quadlet"]
 +++

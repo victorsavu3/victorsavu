@@ -1,6 +1,6 @@
 +++
 title = "Change the SSHD port in Fedore CoreOS"
-date = 2026-03-07T19:00:00.00Z
+date = 2026-03-07T19:00:00Z
 tags=["coreos", "selinux", "sshd"]
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "Enable ipv6 in a quadlet container"
-date = 2026-01-17
+date = 2026-01-17T16:00:00Z
 os=["CoreOS"]
 tags=["ipv6", "quadlet"]
 +++
