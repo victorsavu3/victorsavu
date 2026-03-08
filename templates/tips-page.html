@@ -7,4 +7,9 @@
 {{ page.content | safe }}
 
 <p class="note">{{ page.date | date(format="%Y-%m-%d") }}</p>
+
+{% if page.updated %}
+  <p class="note"> Updated {{ page.updated | date(format="%Y-%m-%d") }}</p>
+{% endif %}
+
 {% endblock content %}

@@ -4,6 +4,11 @@
 <h1 class="title">
   {{ page.title }}
 </h1>
-<p class="subtitle"><strong>{{ page.date | date(format="%Y-%m-%d") }}</strong></p>
+<p class="subtitle">
+  <strong>{{ page.date | date(format="%Y-%m-%d") }}</strong>
+  {% if page.updated %}
+    Updated {{ page.updated | date(format="%Y-%m-%d") }}
+  {% endif %}
+</p>
 {{ page.content | safe }}
 {% endblock content %}
