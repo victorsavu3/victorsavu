@@ -1,10 +1,11 @@
 +++
-title = "Change the SSHD port in Fedore CoreOS"
+title = "Change the SSHD port in Fedora CoreOS"
 date = 2026-03-07T19:00:00Z
+updated = 2026-03-08T08:30:00Z
 tags=["coreos", "selinux", "sshd"]
 +++
 
-Changing the port of sshd in CoreOS is not obvious. There are multiple open bugs ([1](https://github.com/coreos/fedora-coreos-tracker/issues/1022), [2](https://github.com/coreos/fedora-coreos-tracker/issues/396)) for this issue and I believe I have found a new approach that works for my server. The [old CoreOS instructions](https://github.com/coreos/docs/blob/master/os/customizing-sshd.md), don't take selinux into account, they just update the `sshd` configuration. The [Flatcar documentation](https://www.flatcar.org/docs/latest/setup/security/customizing-sshd/) is almost identical.
+Changing the port of sshd in [CoreOS](https://fedoraproject.org/coreos/) is not obvious. There are multiple open bugs ([1](https://github.com/coreos/fedora-coreos-tracker/issues/1022), [2](https://github.com/coreos/fedora-coreos-tracker/issues/396)) for this issue and I believe I have found a new approach that works for my server. The [old CoreOS instructions](https://github.com/coreos/docs/blob/master/os/customizing-sshd.md), don't take selinux into account, they just update the `sshd` configuration. The [Flatcar documentation](https://www.flatcar.org/docs/latest/setup/security/customizing-sshd/) is almost identical.
 
 ### 1. Configure `sshd.service` and `sshd.socket`
 
