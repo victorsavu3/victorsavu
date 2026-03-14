@@ -23,7 +23,7 @@ create-release: build
     tar -cvf public.tar.xz public/
     curl -v --user victor:${FORGEJO_TOKEN} \
         --upload-file public.tar.xz \
-        https://forgejo.victorsavu.eu/api/packages/victor/generic/victorsavu/{{ datetime("%Y-%m-%d") }}/www.tar.xz
+        https://forgejo.victorsavu.eu/api/packages/victor/generic/victorsavu/{{ datetime("%Y-%m-%d_%H-%M") }}/www.tar.xz
     rm public.tar.xz
 
 import-cv:
