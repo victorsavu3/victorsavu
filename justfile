@@ -25,3 +25,6 @@ create-release: build
         --upload-file public.tar.xz \
         https://forgejo.victorsavu.eu/api/packages/victor/generic/victorsavu/{{ datetime("%Y-%m-%d") }}/www.tar.xz
     rm public.tar.xz
+
+import-cv:
+    ps2pdf ../cv/document.pdf static/cv.pdf
