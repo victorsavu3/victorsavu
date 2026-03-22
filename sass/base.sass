@@ -1,3 +1,9 @@
+@use 'solarized.scss'
+
+$tablet: 768px
+$desktop: 1024px
+$wide: 1280px
+
 html, body
   margin: 0
   padding: 0
@@ -12,13 +18,37 @@ html, body
 .site-content
   flex: 1
 
-.site-footer
-  padding: 1rem
-  text-align: center
+.site-header
+  background-color: solarized.$base02
+  padding: 0 2vw
 
-$tablet: 768px
-$desktop: 1024px
-$wide: 1280px
+  @media (min-width: $tablet)
+    padding: 0 4vw
+
+  @media (min-width: $desktop)
+    padding: 0 8vw
+
+.logo-link
+  display: flex
+  align-items: center
+  gap: 1rem
+  text-decoration: none
+
+.logo-image
+  height: 8vh
+  aspect-ratio: 1.4
+  padding: 1vh
+  width: auto
+
+.site-title
+  font-size: 10vh
+  margin: 0
+  line-height: 1
+
+.site-footer
+  background-color: solarized.$base02
+  padding: 0
+  text-align: center
 
 .container
   width: 100%
