@@ -8,6 +8,7 @@ build:
 install-deps:
     cargo install --locked --git https://github.com/getzola/zola
     cargo install precompress
+    pip3 install jingtrang
 
 wait-ssh-ready host:
     until ssh {{host}} true >/dev/null 2>&1; do sleep 1; done
@@ -28,3 +29,7 @@ create-release: build
 
 import-cv:
     ps2pdf ../cv/document.pdf static/cv.pdf
+
+validate-bimi:
+    curl https://bimigroup.org/resources/SVG_PS-latest.rnc.txt -o SVG_PS-latest.rnc.txt
+    pyjing -c SVG_PS-latest.rnc.txt static/bimi-logo.svg
