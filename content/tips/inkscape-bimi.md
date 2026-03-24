@@ -15,25 +15,19 @@ tags=["inkscape", "BIMI"]
 
 The document should have a title for the format to be valid for BIMI. Add it in Inkscape:
 
-<a href="/inkscape-bimi/metadata.png">
-    <img src="/inkscape-bimi/metadata.png" alt="Document Metadata page" style="height: 50vh;"/>
-</a>
+{{ image(image="/inkscape-bimi/metadata.png", alt="Document Metadata page") }}
 
 ### 2. Save the right format
 
 Use `Optimized SVG` in the `Save As` dialog:
 
-<a href="/inkscape-bimi/save.png">
-    <img src="/inkscape-bimi/save.png" alt="Save As Optimized SVG" style="height: 50vh;"/>
-</a>
+{{ image(image="/inkscape-bimi/save.png", alt="Save As Optimized SVG") }}
 
 ### 3. Configure export
 
 The precision of the output must be set to `2` and `Collapse groups` should be selected.
 
-<a href="/inkscape-bimi/optimized.png">
-    <img src="/inkscape-bimi/optimized.png" alt="Save As Optimized SVG" style="height: 50vh;"/>
-</a>
+{{ image(image="/inkscape-bimi/optimized.png", alt="Optimize settings") }}
 
 > [!WARNING]  
 > You are removing precision from the orignal `SVG`, review the output, particularly around corners and edges.
@@ -62,9 +56,7 @@ Follow the [official instructions](https://bimigroup.org/using-the-rnc-schema-to
 
 ### 1. Export correctly
 
-<a href="/inkscape-bimi/illustrator.png">
-    <img src="/inkscape-bimi/illustrator.png" alt="Save As Optimized SVG" style="height: 50vh;"/>
-</a>
+{{ image(image="/inkscape-bimi/illustrator.png", alt="Save As SVG Tiny SVG") }}
 
 > [!WARNING]  
 > You are removing precision from the orignal `SVG`, review the output, particularly around corners and edges.

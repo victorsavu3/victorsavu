@@ -5,7 +5,7 @@ updated = 2026-03-22T21:00:00Z
 tags = ["launch", "lgoo"]
 +++
 
-<img src="/logo.svg" alt="My new logo" style="height: 50vh; aspect-ratio: 1.4"/>
+{{ image(image="/logo.svg", alt="My new logo") }}
 
 ## Logo
 
