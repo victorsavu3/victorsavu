@@ -1,25 +1,28 @@
 @use 'solarized.scss'
 
-.markdown-alert-warning
-  border-left: 4px solid solarized.$yellow
-  background-color: solarized.$base02
-  padding: 1rem 1rem 1rem 3rem
-  margin: 1.5rem 0
-  line-height: 1.5
-  
-  position: relative
+$alert-types:  "note" "🛈" solarized.$blue, "tip" "💡" solarized.$green, "important" "❢" solarized.$orange, "warning" "⚠" solarized.$yellow, "critical" "🛑" solarized.$red
 
-.markdown-alert-warning::before
-  content: "⚠"
-  color: solarized.$yellow
-  position: absolute
-  left: 1rem
-  top: 1.15rem
-  width: 1.25rem
-  height: 1.25rem
+@each $name, $icon, $color in $alert-types
+    .markdown-alert-#{$name}
+        border-left: 4px solid $color
+        background-color: solarized.$base02
+        padding: 1rem 1rem 1rem 3rem
+        margin: 1.5rem 0
+        line-height: 1.5
 
-.markdown-alert-warning > *:first-child
-  margin-top: 0
+        position: relative
 
-.markdown-alert-warning > *:last-child
-  margin-bottom: 0
+    .markdown-alert-#{$name}::before
+        content: $icon
+        color: $color
+        position: absolute
+        left: 1rem
+        top: 1.15rem
+        width: 1.25rem
+        height: 1.25rem
+
+    .markdown-alert-#{$name} > *:first-child
+        margin-top: 0
+
+    .markdown-alert-#{$name} > *:last-child
+        margin-bottom: 0
