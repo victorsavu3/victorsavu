@@ -1,4 +1,5 @@
-@use 'solarized.scss'
+@use 'solarized'
+@use 'alerts'
 
 $phone: 480px
 $tablet: 768px
@@ -83,30 +84,6 @@ object.pdf
   width: 80%
   height: 80vh
   margin-left: 10%
-
-.markdown-alert-warning
-  border-left: 4px solid solarized.$yellow
-  background-color: solarized.$base02
-  padding: 1rem 1rem 1rem 3rem
-  margin: 1.5rem 0
-  line-height: 1.5
-  
-  position: relative
-
-.markdown-alert-warning::before
-  content: "⚠"
-  color: solarized.$yellow
-  position: absolute
-  left: 1rem
-  top: 1.15rem
-  width: 1.25rem
-  height: 1.25rem
-
-.markdown-alert-warning > *:first-child
-  margin-top: 0
-
-.markdown-alert-warning > *:last-child
-  margin-bottom: 0
 
 .image
   max-height: 60vh
