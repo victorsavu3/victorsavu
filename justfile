@@ -33,3 +33,13 @@ import-cv:
 validate-bimi:
     curl https://bimigroup.org/resources/SVG_PS-latest.rnc.txt -o SVG_PS-latest.rnc.txt
     pyjing -c SVG_PS-latest.rnc.txt static/bimi-logo.svg
+
+favicon-ico:
+    magick static/favicon-background.svg -bordercolor white -border 0 \
+          \( -clone 0 -resize 16x16 \) \
+          \( -clone 0 -resize 32x32 \) \
+          \( -clone 0 -resize 48x48 \) \
+          \( -clone 0 -resize 64x64 \) \
+          \( -clone 0 -resize 128x218 \) \
+          \( -clone 0 -resize 256x256 \) \
+          -delete 0 -alpha off -colors 256 static/favicon.ico
