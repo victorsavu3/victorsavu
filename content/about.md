@@ -1,5 +1,6 @@
 +++
 title = "About"
+description = "Contact, personal and website information"
 +++
 
 #### Contact

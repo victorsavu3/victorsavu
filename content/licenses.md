@@ -1,5 +1,6 @@
 +++
 title = "Licences"
+description = "Licenses of software used by this website"
 +++
 
 #### [Solarized](https://github.com/altercation/solarized/blob/master/LICENSE)
