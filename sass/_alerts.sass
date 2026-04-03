@@ -5,12 +5,15 @@ $alert-types:  "note" "🛈" solarized.$blue, "tip" "💡" solarized.$green, "im
 @each $name, $icon, $color in $alert-types
     .markdown-alert-#{$name}
         border-left: 4px solid $color
-        background-color: solarized.$base02
+        background-color: solarized.$base2
         padding: 1rem 1rem 1rem 3rem
         margin: 1.5rem 0
         line-height: 1.5
 
         position: relative
+
+        @media (prefers-color-scheme: dark)
+            background-color: solarized.$base02
 
     .markdown-alert-#{$name}::before
         content: $icon
