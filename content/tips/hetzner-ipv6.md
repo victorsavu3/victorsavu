@@ -29,3 +29,5 @@ may-fail=false
 For DNS (both ipv4 and ipv6) I picked [Google DNS](https://developers.google.com/speed/public-dns/docs/using).
 
 This configuration was based on the [Hetzner documentation on ipv6](https://docs.hetzner.com/cloud/servers/primary-ips/primary-ip-configuration/).
+
+See also: [Use direct ipv6 when possible and a fallback for ipv4](@/tips/cheat-ipv6.md)

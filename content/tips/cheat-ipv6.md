@@ -54,3 +54,5 @@ To get around this I have a funky setup that allows direct connections over ipv6
 ```
 
 We use Caddy to proxy ipv4 connections from clients connecting over ipv4 to `homeserver`. Since it can't respond to all http requests (All ipv6 requests go directly to `homeserver`), we can't use the [`http-01`](https://letsencrypt.org/docs/challenge-types/#http-01-challenge) challenge here and need to use something like [`dns-01`](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge) instead. `dns-01` also allows obtaining a wildcard certificate. You can proxy as many subdomains as you need with this setup (I use 4 for example). Additional domains just need to be added to the `@redirected`: `host('home.victorsavu.eu', 'second.victorsavu.eu')`.
+
+See also: [Enable ipv6 on a Hetzner CoreOS server](@/tips/hetzner-ipv6.md)

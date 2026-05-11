@@ -22,3 +22,9 @@ To make my life simpler, I've migrated to a self-hosted instance of [Radicale]. 
 [Thunderbird]: https://www.thunderbird.net
 [DAVx5]: https://www.davx5.com/
 [CalDAV Push]: https://github.com/bitfireAT/webdav-push
+
+### See also
+
+* [Backup Radicale to git](@/tips/radicale-git.md)
+* [Override the radicale user when using docker](@/tips/radicale-podman-user.md)
+* [Sharing Calendars using Radicale and symlinks](@/tips/radicale-link-share-calendar.md)

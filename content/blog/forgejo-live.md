@@ -17,3 +17,8 @@ This website is built using Zola and completely static. You can now [read the so
 ### Other projects
 
 I'm slowly migrating from an older Forgejo instance (which started as [Gitea](https://about.gitea.com/)) to this one, expect more repositories to show up soon. Most of them are private though.
+
+### See also
+
+* [Use Proton to send emails from Forgejo](@/tips/forgejo-proton-email.md)
+* [Change the SSHD port in Fedora CoreOS](@/tips/sshd-port-coreos.md)
