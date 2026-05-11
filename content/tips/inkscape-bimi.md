@@ -30,7 +30,7 @@ The precision of the output must be set to `2` and `Collapse groups` should be s
 {{ image(image="/inkscape-bimi/optimized.png", alt="Optimize settings") }}
 
 > [!WARNING]  
-> You are removing precision from the orignal `SVG`, review the output, particularly around corners and edges.
+> You are removing precision from the original `SVG`, review the output, particularly around corners and edges.
 
 ### 4. Edit the resulting SVG
 
@@ -40,7 +40,7 @@ Replace the version attribute of the `svg` node from `version="1.1"` to `version
 sed -e 's|version="1.1"|version="1.2" baseProfile="tiny-ps"|'  
 ```
 
-You also need to remove the `metadata` section as Inkscapes adds incompatible elements to it (like `rdf:RDF`):
+You also need to remove the `metadata` section as Inkscape adds incompatible elements to it (like `rdf:RDF`):
 
 ```
  <metadata>

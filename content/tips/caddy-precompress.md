@@ -23,7 +23,7 @@ cargo install precompress
 ~/.cargo/bin/precompress {{your site folder}}
 ```
 
-I use a [justfile](https://just.systems/man/en/) to manage building and deploying my website, which let's me do everything in a one-liner:
+I use a [justfile](https://just.systems/man/en/) to manage building and deploying my website, which lets me do everything in a one-liner:
 
 ```justfile
 build:

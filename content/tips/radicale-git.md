@@ -35,7 +35,7 @@ Volume=/var/<somewhere>>/.gitconfig:/root/.gitconfig:Z,ro
 git remote add origin https://<user>:<password>@<repository>.git
 ```
 
-[Forgejo](https://forgejo.org/) supports [repository scoped access tokens](https://forgejo.org/docs/latest/user/token-scope/#specific-repositories) that are ideal in this case (added to versoin 15). The token must be used instead of the password and can be restricted to a single repository.
+[Forgejo](https://forgejo.org/) supports [repository scoped access tokens](https://forgejo.org/docs/latest/user/token-scope/#specific-repositories) that are ideal in this case (added to version 15). The token must be used instead of the password and can be restricted to a single repository.
 
 For other git hosts, check what is available and avoid storing your actual user password in plaintext.
 

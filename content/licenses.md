@@ -1,5 +1,5 @@
 +++
-title = "Licences"
+title = "Licenses"
 description = "Licenses of software used by this website"
 +++
 

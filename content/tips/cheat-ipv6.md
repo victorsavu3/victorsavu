@@ -6,9 +6,9 @@ tags=["ipv6", "dns", "tls", "caddy"]
 
 ## Background
 
-My network provider only provides me a ipv6 addresses and uses [DS-Lite](https://fritz.com/en/apps/knowledge-base/FRITZ-Box-7590/1611_What-is-DS-Lite-and-how-does-it-work) for outgoing ipv4 connections. This means I can't host something on my home-network and have it accessible from all networks.
+My network provider only provides me an ipv6 address and uses [DS-Lite](https://fritz.com/en/apps/knowledge-base/FRITZ-Box-7590/1611_What-is-DS-Lite-and-how-does-it-work) for outgoing ipv4 connections. This means I can't host something on my home-network and have it accessible from all networks.
 
-To get around this I have a funky setup that allows direct connections over ipv6 and proxies all ipv4 trough a server that does have an ipv4 address (I use the cheapest [Hetzner](https://hetzner.com) server for this). Most networks support ipv6 and a direct connection is used and I don't have to pay for bandwith. The server is only involved in ipv6 connections.
+To get around this I have a funky setup that allows direct connections over ipv6 and proxies all ipv4 through a server that does have an ipv4 address (I use the cheapest [Hetzner](https://hetzner.com) server for this). Most networks support ipv6 and a direct connection is used and I don't have to pay for bandwidth. The server is only involved in ipv6 connections.
 
 ## Setup
 

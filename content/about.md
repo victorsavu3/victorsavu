@@ -14,7 +14,7 @@ description = "Contact, personal and website information"
 
 <details>
     <summary>
-        Click to view here or <a href="/cv.pdf">dowload</a>
+        Click to view here or <a href="/cv.pdf">download</a>
     </summary>
     <object data="/cv.pdf" type="application/pdf" class="pdf">
         <p>Unable to display CV as a PDF. <a href="/cv.pdf">Download</a> instead.</p>

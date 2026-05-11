@@ -10,7 +10,7 @@ I have given up trying to use [Proton Calendar] as my main calendar application 
 1. To be able to plan things, I need to see my work events in my calendar app. Proton has a quite large [sync delay] for [external calendars], large enough for me to make mistakes.
 1. Proton contacts also don't sync with Android (you can [import, but not export]).
 
-To make my life simpler, I've migrated to a self-hosted instance of [Radicale]. I lose the [Proton Mail] app integration, but I can still use [Thunderbird] to manage everything including contacts. In Android I use [DAVx5] to sync everything with much shorter sync delays. I hope [CalDAV Push] will make the delay go completely away once Radicale supports it.
+To make my life simpler, I've migrated to a self-hosted instance of [Radicale]. I lose the [Proton Mail] app integration, but I can still use [Thunderbird] to manage everything including contacts. On Android I use [DAVx5] to sync everything with much shorter sync delays. I hope [CalDAV Push] will make the delay go completely away once Radicale supports it.
 
 [Proton Calendar]: https://calendar.proton.me
 [CalDAV]: https://en.wikipedia.org/wiki/CalDAV

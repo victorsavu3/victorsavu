@@ -36,7 +36,7 @@ ImageTag=localhost/caddy-desec
 ```
 
 > [!NOTE] 
-> Note: `SetWorkingDirectory` is required and also let's you put the `Containerfile` somewhere else. 
+> Note: `SetWorkingDirectory` is required and also lets you put the `Containerfile` somewhere else. 
 
 Your `caddy.container` now needs to reference the `caddy.build` image by adding
 

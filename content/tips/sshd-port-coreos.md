@@ -5,7 +5,7 @@ updated = 2026-03-08T08:30:00Z
 tags=["coreos", "selinux", "sshd"]
 +++
 
-Changing the port of sshd in [CoreOS](https://fedoraproject.org/coreos/) is not obvious. There are multiple open bugs ([1](https://github.com/coreos/fedora-coreos-tracker/issues/1022), [2](https://github.com/coreos/fedora-coreos-tracker/issues/396)) for this issue and I believe I have found a new approach that works for my server. The [old CoreOS instructions](https://github.com/coreos/docs/blob/master/os/customizing-sshd.md), don't take selinux into account, they just update the `sshd` configuration. The [Flatcar documentation](https://www.flatcar.org/docs/latest/setup/security/customizing-sshd/) is almost identical.
+Changing the port of sshd in [CoreOS](https://fedoraproject.org/coreos/) is not obvious. There are multiple open bugs ([1](https://github.com/coreos/fedora-coreos-tracker/issues/1022), [2](https://github.com/coreos/fedora-coreos-tracker/issues/396)) for this issue and I believe I have found a new approach that works for my server. The [old CoreOS instructions](https://github.com/coreos/docs/blob/master/os/customizing-sshd.md), don't take SELinux into account, they just update the `sshd` configuration. The [Flatcar documentation](https://www.flatcar.org/docs/latest/setup/security/customizing-sshd/) is almost identical.
 
 ### 1. Configure `sshd.service` and `sshd.socket`
 
@@ -65,6 +65,7 @@ storage:
 
 ### Alternatives that didn't work for me
 
-* Adding a custom selinx policy. It only worked if I installed it with `selinux -i`.
+* Adding a custom SELinux policy. It only worked if I installed it with `selinux -i`.
   * I did manage to deploy a `pp` file that showed up in `semodule --list-modules`, but never took effect at both low or high priorities.
 * Changing `ssh_port_t` using `semanage`, but it's not installed in CoreOS.
+

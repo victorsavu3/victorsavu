@@ -8,11 +8,11 @@ tags = ["launch", "forgejo", "coreos"]
 
 ### Forgejo
 
-I like [git](https://git-scm.com/) and good UIs to review changes, so I use [Forgejo](https://forgejo.org/). This setup took a while since I got sidetracked with [SSH passtroug](https://forgejo.org/docs/latest/admin/installation/docker/#ssh-passthrough), which I never got working on [CoreOS](https://fedoraproject.org/coreos/). But now, by using the built-in SSH server and a [moved sshd port](@/tips/sshd-port-coreos.md) I have a working forgejo instance 🎉.
+I like [git](https://git-scm.com/) and good UIs to review changes, so I use [Forgejo](https://forgejo.org/). This setup took a while since I got sidetracked with [SSH passthrough](https://forgejo.org/docs/latest/admin/installation/docker/#ssh-passthrough), which I never got working on [CoreOS](https://fedoraproject.org/coreos/). But now, by using the built-in SSH server and a [moved sshd port](@/tips/sshd-port-coreos.md) I have a working forgejo instance 🎉.
 
 ### This website
 
-This website is a built using Zola and completely static. You can now [read the source code](https://forgejo.victorsavu.eu/victor/victorsavu), [including all the history](https://forgejo.victorsavu.eu/victor/victorsavu/commits/branch/main). Everything is intended to be public so let's show the world how the sausage is made.
+This website is built using Zola and completely static. You can now [read the source code](https://forgejo.victorsavu.eu/victor/victorsavu), [including all the history](https://forgejo.victorsavu.eu/victor/victorsavu/commits/branch/main). Everything is intended to be public so let's show the world how the sausage is made.
 
 ### Other projects
 
