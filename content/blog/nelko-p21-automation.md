@@ -14,11 +14,11 @@ As an alternative to the paper labels, I also own a [Dymo 160] (just realized I 
 
 After many years of looking for a label printer, I stumbled on the [Nelko P21]. It's cheap, small and most importantly: can be controlled over bluetooth. The labels are pre-cut, waterproof, the resolution seems acceptable and there's no ink to dry out from sporadic usage. What sold me on this printer was the [Fyne-P21-Print] project, which allows you to control the printer from the desktop.
 
-Unfortunately, [Fyne-P21-Print] only has a GUI to print labels (which the Nelko already offers). So I started working on a CLI tool that just prints labels: [p21-print]. With the help of Claude it only took 2 days to set it up based on existing implementations and investigations performed by others. Thank you [TylerCode] for [Fyne-P21-Print] and [merlinschumacher] for [nelko-p21-print].
+Unfortunately, [Fyne-P21-Print] only has a GUI to print labels (which the Nelko Android app already offers). So I started working on a CLI tool that just prints labels: [p21-print]. With the help of Claude it only took 2 days to set it up based on existing implementations and investigations performed by others. Thank you [TylerCode] for [Fyne-P21-Print] and [merlinschumacher] for [nelko-p21-print].
 
 With the CLI, you can print images and control the printer. Nothing more, nothing less. Everything is tested on my actual printer and I have used it to automatically print archival labels for a bunch of items. Look at the [README] for details on how to use it.
 
-It's enough to automate label printing in your setup. I built another (private) tool that uses SVG templates to print my labels and I just provide the data. For example, I have my cool new template for freezer food:
+It's enough to automate label printing in my setup. I built another (private) tool that uses SVG templates to print my labels and I just provide the data. For example, I have my cool new template for freezer food:
 
 {{ image(image="/nelko-p21-automation/freezer.png", alt="Freezer tag", class="image-p21") }}
 
