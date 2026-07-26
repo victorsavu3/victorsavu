@@ -11,13 +11,13 @@ To allow [Forgejo](https://forgejo.org/) to send emails using [Proton](https://p
 
 ```
 [mailer]
-ENABLED = true
+ENABLED        = true
 FROM           = {{SMTP username}}
 PROTOCOL       = smtp+starttls 
 SMTP_ADDR      = smtp.protonmail.ch
 SMTP_PORT      = 587
 USER           = {{SMTP username}}
-PASSWD         = `{{SMTP token}}`
+PASSWD         = {{SMTP token}}
 ```
 
 Where `{{SMTP username}}` and `{{SMTP token}}` should be copied from Proton.
