@@ -2,6 +2,8 @@
 title = "Controlling a Nelko P21 from Linux"
 description = "How I use a Nelko P21 from Linux to automate label printing."
 date = 2026-07-19T22:00:00Z
+
+[taxonomies]
 tags = ["labels", "automation"]
 +++
 

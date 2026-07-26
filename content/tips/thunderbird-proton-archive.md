@@ -1,7 +1,9 @@
 +++
 title = "Allow Thunderbird to archive proton emails"
 date = 2026-04-03T18:30:00Z
-tags=["thunderbird", "proton", "email"]
+
+[taxonomies]
+tags = ["thunderbird", "proton", "email"]
 +++
 
 If you get a `Operation Not Allowed` error when archiving emails in [Thunderbird] when using [Proton Bridge], try to update your account settings in Thunderbird.

@@ -1,14 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
+<h2 class="title">
   {{ page.title }}
-</h1>
+</h2>
 <p class="subtitle">
   <strong>{{ page.date | date(format="%Y-%m-%d") }}</strong>
   {% if page.updated %}
     Updated {{ page.updated | date(format="%Y-%m-%d") }}
   {% endif %}
+
+  {% if page.taxonomies is containing ("tags") %}
+    Tags: {% for tag in page.taxonomies["tags"] %}
+      <a href='{{ config.base_url | safe }}/tags/{{ tag | slugify }}'>{{ tag }}</a>
+    {% endfor %}
+  {% endif %}
 </p>
+
 {{ page.content | safe }}
+
 {% endblock content %}

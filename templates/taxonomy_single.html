@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="title">{{ taxonomy.name | capitalize }}: {{ term.name | capitalize }}</h1>
+
+<ul>
+    {% for page in term.pages %}
+        {% set kind = page.components | first %}
+        <li>
+            {% if kind == "blog" %}
+                Blog:
+            {% elif kind == "tips" %}
+                Tip:
+            {% endif %}
+            <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock content %}

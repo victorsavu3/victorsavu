@@ -1,8 +1,10 @@
 +++
 title = "Enable ipv6 on a Hetzner CoreOS server"
 date = 2026-01-17T14:00:00Z
-os=["CoreOS"]
-tags=["ipv6", "quadlet"]
+
+[taxonomies]
+os = ["CoreOS"]
+tags = ["ipv6", "quadlet"]
 +++
 
 [Hetzner](https://hetzner.com) automatically assigns an ipv6 range to each server, but it does **not** assign an ipv6 address to it. This must be done manually for [CoreOS](https://fedoraproject.org/coreos/) by updating the network configuration in `/etc/NetworkManager/system-connections/enp1s0.nmconnection` to:

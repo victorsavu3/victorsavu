@@ -1,7 +1,9 @@
 +++
 title = "Use mailbox.org to send emails from Forgejo"
 date = 2026-07-26T13:51:00Z
-tags=["email", "forgejo", "mailbox"]
+
+[taxonomies]
+tags = ["email", "forgejo", "mailbox"]
 +++
 
 To allow [Forgejo](https://forgejo.org/) to send emails using [mailbox.org](https://mailbox.org/en/), you need to:

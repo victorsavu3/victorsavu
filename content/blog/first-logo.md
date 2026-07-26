@@ -2,6 +2,8 @@
 title = "I have a logo"
 date = 2026-03-22T20:00:00Z
 updated = 2026-03-22T21:00:00Z
+
+[taxonomies]
 tags = ["launch", "logo"]
 +++
 

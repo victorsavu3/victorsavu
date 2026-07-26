@@ -1,7 +1,9 @@
 +++
 title = "Use direct ipv6 when possible and a fallback for ipv4"
 date = 2026-01-17T10:00:00Z
-tags=["ipv6", "dns", "tls", "caddy"]
+
+[taxonomies]
+tags = ["ipv6", "dns", "tls", "caddy"]
 +++
 
 ## Background

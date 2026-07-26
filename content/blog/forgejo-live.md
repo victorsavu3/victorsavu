@@ -1,6 +1,8 @@
 +++
 title = "Forgejo is now live"
 date = 2026-03-07T20:00:00Z
+
+[taxonomies]
 tags = ["launch", "forgejo", "coreos"]
 +++
 

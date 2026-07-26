@@ -1,7 +1,9 @@
 +++
 title = "Use mailbox.org to send emails from Grafana"
 date = 2026-07-26T13:55:00Z
-tags=["email", "grafana", "mailbox"]
+
+[taxonomies]
+tags = ["email", "grafana", "mailbox"]
 +++
 
 To allow [Grafana](https://grafana.com/) to send emails using [mailbox.org](https://mailbox.org/en/), you need to:

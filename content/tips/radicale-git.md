@@ -1,8 +1,10 @@
 +++
 title = "Backup Radicale to git"
 date = 2026-05-10T20:00:00Z
-os=["CoreOS"]
-tags=["radicale", "git", "forgejo", "podman"]
+
+[taxonomies]
+os = ["CoreOS"]
+tags = ["radicale", "git", "forgejo", "podman"]
 +++
 
 [Radicale](https://radicale.org/v3.html) allows for [storage hooks](https://radicale.org/v3.html#versioning-collections-with-git) to record changes in git. Getting it working in a container is a bit more involved though. You need:

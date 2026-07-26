@@ -1,7 +1,9 @@
 +++
 title = "Use Proton to send emails from Forgejo"
 date = 2026-02-15
-tags=["email", "forgejo", "proton"]
+
+[taxonomies]
+tags = ["email", "forgejo", "proton"]
 +++
 
 To allow [Forgejo](https://forgejo.org/) to send emails using [Proton](https://proton.me), you need to:

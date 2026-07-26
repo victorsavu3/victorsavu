@@ -1,7 +1,9 @@
 +++
 title = "Use Proton to send emails from Grafana"
 date = 2026-04-22T20:30:00Z
-tags=["email", "grafana", "proton"]
+
+[taxonomies]
+tags = ["email", "grafana", "proton"]
 +++
 
 To allow [Grafana](https://grafana.com/) to send emails using [Proton](https://proton.me), you need to:

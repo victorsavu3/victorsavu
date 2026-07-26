@@ -1,8 +1,10 @@
 +++
 title = "Add modules to caddy on CoreOS"
 date = 2026-01-17T12:00:00Z
-os=["CoreOS"]
-tags=["caddy", "quadlet"]
+
+[taxonomies]
+os = ["CoreOS"]
+tags = ["caddy", "quadlet"]
 +++
 
 Some [Caddy](https://caddyserver.com/) modules are [non-standard](https://caddyserver.com/docs/modules/) and are not included in the official docker image. You can add modules easily using [`xcaddy`](https://github.com/caddyserver/xcaddy), but you need to create a custom docker image each time. This can be done in CoreOS using `.build` files.

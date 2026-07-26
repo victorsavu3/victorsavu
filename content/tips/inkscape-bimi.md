@@ -2,7 +2,9 @@
 title = "Create a BIMI compatible file from Inkscape"
 date = 2026-03-22T21:00:00Z
 updated = 2026-03-23T20:00:00Z
-tags=["inkscape", "BIMI"]
+
+[taxonomies]
+tags = ["inkscape", "BIMI"]
 +++
 
 ## Background

@@ -1,7 +1,9 @@
 +++
 title = "Limiting deSEC tokens for DNS-01 and dynDNS"
 date = 2026-02-08
-tags=["dns", "desec"]
+
+[taxonomies]
+tags = ["dns", "desec"]
 +++
 
 The [deSEC documentation](https://desec.readthedocs.io/en/latest/auth/tokens.html#token-scoping-policies) documents how to scope tokens using policies. I used this feature to limit my deSEC tokens to what they are responsible for.

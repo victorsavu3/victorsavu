@@ -1,7 +1,9 @@
 +++
 title = "I'm switching from Proton Calendar to Radicale"
 date = 2026-04-03T19:50:00Z
-tags=["proton", "radicale"]
+
+[taxonomies]
+tags = ["proton", "radicale"]
 +++
 
 I have given up trying to use [Proton Calendar] as my main calendar application due to three big issues:
