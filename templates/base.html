@@ -17,7 +17,11 @@
 
     <link rel="stylesheet" href="{{ get_url(path="base.css") }}">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {%- if page.extra.noindex | default(value=false) or section.extra.noindex | default(value=false) %}
+    <meta name="robots" content="noindex, nofollow">
+    {%- endif %}
 
     <meta property="og:title" content="
         {%- if page.title -%}
