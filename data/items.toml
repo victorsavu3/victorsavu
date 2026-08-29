@@ -1,7 +1,7 @@
 [[items]]
 name = "Logo"
 id = "1086"
-image = "logo.svg"
+image = "/logo.svg"
 lost = true
 description = "My Logo. Only exists virtually, physical copy is lost forever since it doesn't actually exist"
 
