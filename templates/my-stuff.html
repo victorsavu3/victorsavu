@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{ page.content | safe }}
+
+{% set items = load_data(path="data/items.toml", required=false) %}
+
+<div class="my-stuff">
+{% for item in items.items %}
+    <div id="{{item.id}}" class="my-stuff-item" hidden="until-found">
+        <div class="content">
+            <img src="{{item.image | default(value="/item.svg") | safe}}">
+            <div class="text">
+                <h3 class="name">{{ item.name }}</h3>
+                {% if item.lost %}
+                    <h3 class="lost">LOST</h3>
+                {% endif %}
+                {% if item.description %}
+                    <p class="description">
+                        {{item.description}}
+                    </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
+
+{% endblock content %}

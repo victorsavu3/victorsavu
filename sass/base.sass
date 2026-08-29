@@ -99,3 +99,43 @@ object.pdf
 .image-p21
   max-height: 60vh
   max-width: 284px
+
+div.my-stuff
+  div.my-stuff-item
+    max-height: 30vh
+    max-width: max(50vh, 600px)
+
+    background-color: solarized.$base2
+    @media (prefers-color-scheme: dark)
+      background-color: solarized.$base02
+
+    margin: 8px 8px
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+    transition: 0.1s
+    &:hover
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+      transition: 0.2s
+      
+      background-color: solarized.$base3
+      @media (prefers-color-scheme: dark)
+        background-color: solarized.$base03
+    
+    .name
+      display: inline
+    .lost
+      display: inline
+      color: solarized.$red
+      font-weight: bold
+      padding: 0 16px
+
+    div.content
+      padding: 8px 16px
+      display: flex
+      gap: 16px
+      img
+        flex: 0 0 40%
+        min-width: 100px
+        height: auto
+      .text
+        flex: 1
+        min-width: 100px
