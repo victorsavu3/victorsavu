@@ -7,7 +7,7 @@
 
 <h2 class="subtitle">
   Latest blog posts
-</h1>
+</h2>
 <ul>
     {% set section = get_section(path="blog/_index.md") %}
     {% set posts = section.pages | sort(attribute="date") | reverse | slice(end=5) %}
@@ -19,7 +19,7 @@
 
 <h2 class="subtitle">
   Latest tips
-</h1>
+</h2>
 <ul>
     {% set section = get_section(path="tips/_index.md") %}
     {% set posts = section.pages | sort(attribute="date") | reverse | slice(end=5) %}
