@@ -2,6 +2,9 @@
 title = "I built a Rust CLI tool without writing a single line of code"
 description = "I built and deployed a Rust CLI tool to shuffle Subsonic playlists — complete with a Podman container, systemd integration, and published packages — without writing a single line of code myself."
 date = 2026-05-14T09:54:00Z
+
+[taxonomies]
+tags = ["music", "subsonic-shuffler"]
 +++
 
 > [!NOTE]

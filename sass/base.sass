@@ -1,3 +1,4 @@
+@use 'sass:color'
 @use 'solarized'
 @use 'alerts'
 
@@ -139,3 +140,23 @@ div.my-stuff
       .text
         flex: 1
         min-width: 100px
+
+li.positive
+  list-style-type: "+ "
+  color: solarized.$green
+
+li.negative
+  list-style-type: "- "
+  color: solarized.$red
+
+div.footnote-definition
+  display: flex
+  gap: 0.3rem
+
+  sup.footnote-definition-label
+    flex-shrink: 0
+    font-size: 0.6em
+
+  p
+    margin: 0
+    font-size: 0.9em
